@@ -7,6 +7,7 @@ ComfyJS.onCommand = (user, command, message, flags, _extra) => {
   }
 
   if (flags.broadcaster && command === "clear") {
+    ComfyJS.Say( "The poll has ended. Total votes:" + totalVotes + "." );
     clearPoll();
   }
 
@@ -17,4 +18,4 @@ ComfyJS.onCommand = (user, command, message, flags, _extra) => {
   }
 };
 
-ComfyJS.Init("{{ eleventy.serverless.path.username }}");
+ComfyJS.Init(process.env.TWITCHUSER, process.env.OAUTH);
