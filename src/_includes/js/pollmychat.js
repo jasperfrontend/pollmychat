@@ -7,7 +7,7 @@ ComfyJS.onCommand = (user, command, message, flags, _extra) => {
   }
 
   if (flags.broadcaster && command === "clear") {
-    ComfyJS.Say( "The poll has ended. Total votes:" + totalVotes + "." );
+    ComfyJS.Say( "The poll has ended. Total votes:" + totalVotes + "!" );
     clearPoll();
   }
 

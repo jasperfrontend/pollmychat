@@ -3,6 +3,6 @@ public
 .vscode
 netlify/functions/poll/**
 !netlify/functions/poll/index.js
-.env
+.env.local
 # Local Netlify folder
 .netlify
